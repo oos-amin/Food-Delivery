@@ -1,0 +1,114 @@
+@media(max-width:1400px) {}
+
+@media(max-width:1200px) {}
+
+@media(max-width:992px) {
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        position: fixed;
+        width: 27rem;
+        left: -27rem;
+        top: 0;
+        bottom: 0;
+        box-shadow: 2px 3px 5px rgba(0, 0, 0, 10%);
+        background-color: #FFFEF9;
+        transition: 0.2s;
+        padding: 5rem 0;
+        gap: 5rem;
+    }
+
+    .nav-list--open {
+        left: 0;
+    }
+
+    .nav__actions {
+        justify-self: center;
+    }
+
+    .nav__toggle {
+        display: flex;
+        width: 5rem;
+        height: 5rem;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .nav__toggle-line {
+        position: relative;
+    }
+
+    .nav__toggle-line,
+    .nav__toggle-line::before,
+    .nav__toggle-line::after {
+        display: block;
+        width: 5rem;
+        height: .5rem;
+        border-radius: 2rem;
+        background-color: var(--color-text-lightblack1);
+        transition: 0.2s;
+
+    }
+
+    .nav__toggle-line::before {
+        content: "";
+        position: absolute;
+        top: 1.3rem;
+    }
+
+    .nav__toggle-line::after {
+        content: "";
+        position: absolute;
+        top: -1.3rem;
+    }
+
+    .nav__toggle-line--open .nav__toggle-line {
+        background: transparent;
+        transition: 0.1s;
+    }
+
+    .nav__toggle-line--open .nav__toggle-line::before {
+        transform: translateY(-13px) rotate(45deg);
+    }
+
+    .nav__toggle-line--open .nav__toggle-line::after {
+        transform: translateY(13px) rotate(-45deg);
+
+    }
+
+}
+
+@media(max-width:768px) {}
+
+@media(max-width:576px) {
+    .nav {
+        grid-template-columns: auto auto;
+    }
+
+    .nav__actions {
+        display: none;
+    }
+
+    .nav-list__actions {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .nav-list__action:nth-child(1) {
+        border: solid 1px var(--color-primary);
+        color: var(--color-primary);
+    }
+
+    .nav-list__action:nth-child(1):hover {
+        background-color: var(--color-primary);
+        color: #fff;
+    }
+
+    .nav-list__action:nth-child(2) {
+        background-color: var(--color-primary);
+        color: #fff;
+        margin-left: 0.5rem;
+    }
+}

@@ -20,6 +20,12 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
+    background-color: #FFFEF9;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* 
@@ -42,4 +48,130 @@ body {
     --color-background-lightgrey1: #E3E3E3;
     --color-background-lightgrey2: #F1F1F1;
     --color-background-lightyellow: #FFFDE6;
+}
+
+/* 
+================
+   Components
+================
+*/
+
+.btn {
+    width: 0.9rem;
+    height: 3.9rem;
+    gap: 1rem;
+    padding-top: 0.7rem;
+    padding-right: 1.6rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.6rem;
+    border-radius: 10rem;
+    border-width: 0.1rem;
+}
+
+/* 
+================
+Helper Classes
+================
+*/
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* 
+================
+     Header
+================
+*/
+
+.header {
+    padding: 1.2rem 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 11;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo-img {}
+
+.nav-list {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 8.5rem;
+}
+
+.nav-list__actions {
+    display: none;
+}
+
+.nav-list__item {}
+
+.nav-list__link {
+    font-family: "Poppins SemiBold";
+    color: var(--color-text-lightgrey);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.nav-list__link:hover {
+    color: var(--color-primary);
+
+}
+
+.nav-list__link--active {
+    color: var(--color-primary);
+}
+
+.nav__actions {
+    transition: 1s;
+}
+
+.nav-action {
+    transition: 0.2s;
+}
+
+.nav-action:nth-child(1) {
+    border: solid 1px var(--color-primary);
+    color: var(--color-primary);
+}
+
+.nav-action:nth-child(1):hover {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.nav-action:nth-child(2) {
+    background-color: var(--color-primary);
+    color: #fff;
+    margin-left: 0.5rem;
+}
+
+/* 
+================
+     Overlay
+================
+*/
+.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 10%);
+    inset: 0;
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    z-index: -1;
+    transition: 0.2s;
+}
+
+.overlay--show {
+    opacity: 1;
+    z-index: 10;
 }
