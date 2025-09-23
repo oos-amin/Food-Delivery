@@ -9,12 +9,7 @@ navBtn.addEventListener('click', function () {
     navBtn.classList.toggle('nav__toggle-line--open');
     navMenu.classList.toggle('nav-list--open');
     overlay.classList.toggle('overlay--show');
-    if (navBtn.classList.contains('nav__toggle-line--open')) {
-        body.classList.add('no-scroll');
-    } else {
-        body.classList.remove('no-scroll');
-
-    }
+    body.classList.toggle('no-scroll');
 });
 
 overlay.addEventListener('click', function () {
