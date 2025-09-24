@@ -133,27 +133,12 @@
         margin-bottom: 11rem;
     }
 
+    .home-photo.desktop {
+        display: none;
+    }
+
     .home-content__actions {
         margin-bottom: 5rem;
-    }
-
-    .home-content__order.desktop {
-        display: none;
-    }
-
-    .home-content__order.mobile {
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 2rem;
-    }
-
-    .home-content__actions.mobile {
-        display: flex;
-        justify-content: center;
-    }
-
-    .home-content__actions.desktop {
-        display: none;
     }
 
     .menu-foods__wrapper {
@@ -220,6 +205,11 @@
         width: 90%;
     }
 
+    .home-content__actions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .home-photo {
         max-width: 23rem;
     }
@@ -237,9 +227,8 @@
     }
 }
 
-
 @media (min-width:768px) {
-    .home-content__order.mobile {
+    .home-photo.mobile {
         display: none;
     }
 }
