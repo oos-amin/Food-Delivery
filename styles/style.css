@@ -7,6 +7,7 @@
 html {
     font-size: 10px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -57,7 +58,6 @@ a {
 */
 
 .btn {
-    width: 0.9rem;
     height: 3.9rem;
     gap: 1rem;
     padding-top: 0.7rem;
@@ -100,7 +100,7 @@ a {
     align-items: center;
 }
 
-.nav__logo-img {}
+/* .nav__logo-img {} */
 
 .nav-list {
     display: flex;
@@ -114,7 +114,7 @@ a {
     display: none;
 }
 
-.nav-list__item {}
+/* .nav-list__item {} */
 
 .nav-list__link {
     font-family: "Poppins SemiBold";
@@ -162,7 +162,7 @@ a {
 ================
 */
 
-.main {}
+/* .main {} */
 
 /* 
 ================
@@ -170,7 +170,9 @@ a {
 ================
 */
 
-.home {}
+.home {
+    margin-bottom: 6rem;
+}
 
 .home-wrapper {
     display: grid;
@@ -178,7 +180,7 @@ a {
     align-items: center;
 }
 
-.home-content {}
+/* .home-content {} */
 
 .home-content__title {
     font-family: 'Poppins SemiBold';
@@ -233,8 +235,6 @@ a {
     box-shadow: 0 10px 17px 0 rgba(112, 144, 176, 0.2);
     background-color: rgba(255, 255, 255, 1);
 }
-
-.home__content__quantity-img {}
 
 .home-content__quantity-plus {
     border: none;
@@ -292,10 +292,6 @@ a {
     cursor: pointer;
 }
 
-.home-content__svg {}
-
-.home-content__text {}
-
 .home-photo {
     max-width: 63rem;
 }
@@ -306,9 +302,168 @@ a {
 
 /* 
 ================
+  Menu Section
+================
+*/
+
+.menu {
+    padding: 15rem 0;
+}
+
+.menu__title {
+    width: 14rem;
+    font-family: "Poppins SemiBold";
+    font-size: 4.8rem;
+    color: var(--color-primary);
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.menu__title::after {
+    content: "";
+    position: absolute;
+    width: 13.7rem;
+    height: 0.8rem;
+    background-color: #FFF6A3;
+    bottom: 0.3rem;
+    left: -0.4rem;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.menu-list {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 15.5rem 16.4rem 11.2rem 13.2rem 17.9rem;
+}
+
+.menu-list__item {
+    display: flex;
+    height: 5.2rem;
+    padding: 8px 20px 8px 20px;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background-lightgrey2);
+    border: solid 1px #E3E3E3;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu-list__item--active {
+    background-color: var(--color-secondry);
+
+}
+
+/* ----- Foods ------ */
+
+.menu-foods__wrapper {
+    display: none;
+}
+
+.menu-foods__wrapper--show {
+    display: grid;
+    grid-template-columns: repeat(3, 37rem);
+    column-gap: 3rem;
+    row-gap: 5rem;
+    margin: 4rem 0;
+}
+
+.menu-food {
+    width: 100%;
+    padding: 1.6rem;
+    border-radius: 1.2rem;
+    border: solid 1px #E3E3E3;
+    position: relative;
+}
+
+.menu-food--hidden {
+    display: none;
+}
+
+.menu-food__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+}
+
+.menu-food__photo::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10.5rem;
+    background-color: #FFFDE6;
+    z-index: -1;
+    border-radius: 0.8rem;
+    bottom: -2rem;
+}
+
+.menu-food__title {
+    font-family: "Poppins SemiBold";
+    font-size: 2rem;
+    color: var(--color-text-lightblack2);
+}
+
+.menu-food__caption {
+    margin: 1rem 0;
+    color: var(--color-text-lightblack1);
+}
+
+.menu-food__rank {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.menu-food__star {}
+
+.menu-food__star-svg {}
+
+.menu-food__score {
+    color: var(--color-text-lightgrey);
+}
+
+.menu-food__shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-food__price {
+    font-family: "Poppins SemiBold";
+    font-size: 2.4rem;
+    color: var(--color-text-lightblack2);
+}
+
+.menu-food__svg {
+    cursor: pointer;
+}
+
+.food-menu__discount {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.menu__see-all {
+    display: block;
+    font-family: "Poppins Medium";
+    font-size: 2rem;
+    color: var(--color-text-lightblack1);
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* 
+================
      Overlay
 ================
 */
+
 .overlay {
     position: fixed;
     background-color: rgba(0, 0, 0, 10%);
