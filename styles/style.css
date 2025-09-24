@@ -248,6 +248,8 @@ a {
     font-size: 2rem;
     margin: 0 1rem;
     position: relative;
+    width: 4rem;
+    text-align: center;
 }
 
 .home-content__quantity-numbers::before {
@@ -422,10 +424,6 @@ a {
     gap: 0.2rem;
     margin-bottom: 1.5rem;
 }
-
-.menu-food__star {}
-
-.menu-food__star-svg {}
 
 .menu-food__score {
     color: var(--color-text-lightgrey);
