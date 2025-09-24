@@ -32,6 +32,7 @@
         transition: 0.2s;
         padding: 5rem 0;
         gap: 5rem;
+        z-index: 11;
     }
 
     .nav-list--open {
@@ -49,6 +50,8 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        z-index: 11;
+
     }
 
     .nav__toggle-line {
@@ -228,7 +231,9 @@
 
 @media (max-width:370px) {
     .menu-list {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
