@@ -387,6 +387,11 @@ a {
     border-radius: 1.2rem;
     border: solid 1px #E3E3E3;
     position: relative;
+    transition: 0.2s;
+}
+
+.menu-food:hover {
+    transform: scale(1.05);
 }
 
 .menu-food--hidden {
@@ -410,6 +415,10 @@ a {
     z-index: -1;
     border-radius: 0.8rem;
     bottom: -2rem;
+}
+
+.menu-food__img {
+    cursor: pointer;
 }
 
 .menu-food__title {
@@ -465,6 +474,144 @@ a {
     text-align: center;
     margin-top: 4rem;
 }
+
+/* 
+================
+  Sale Section
+================
+*/
+
+.sale {
+    padding: 15rem 0;
+}
+
+.sale__title {
+    font-family: "Poppins SemiBold";
+    font-size: 3.8rem;
+    color: var(--color-primary);
+    position: relative;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.sale__title::after {
+    content: "";
+    position: absolute;
+    width: 17rem;
+    height: 0.8rem;
+    background-color: #FFF6A3;
+    bottom: 0.3rem;
+    left: -0.4rem;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.sale__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 2.5rem;
+}
+
+.sale-offer {
+    background-color: var(--color-background-lightgrey2);
+    border-radius: 2rem;
+    padding: 5rem 0 5rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.sale-offer:hover {
+    background-color: var(--color-primary);
+    transform: scale(1.03);
+}
+
+.sale-offer:hover .sale-offer__heading {
+    color: var(--color-background-lightgrey2);
+}
+
+.sale-offer:hover .sale-offer__title {
+    color: var(--color-secondry);
+}
+
+.sale-offer:hover .sale-offer__caption {
+    color: var(--color-background-lightgrey2);
+}
+
+.sale-offer:hover .sale-offer__price {
+    color: var(--color-background-lightgrey2);
+
+}
+
+.sale-offer:hover .sale-offer__discount {
+    color: var(--color-secondry);
+}
+
+.sale-offer__img {
+    position: absolute;
+    top: 8rem;
+    bottom: 0;
+    right: -5.5rem;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.sale-offer__heading {
+    color: var(--color-text-lightblack2);
+    position: relative;
+}
+
+.sale-offer__heading::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    background-color: rgba(125, 124, 124, 40%);
+    right: -9rem;
+    top: 7px;
+}
+
+.sale-offer__title {
+    font-family: "Poppins SemiBold";
+    font-size: 3.2rem;
+    margin: 2rem 0;
+    color: var(--color-primary);
+}
+
+.sale-offer__caption {
+    color: var(--color-text-lightblack2);
+    margin: 2rem 0;
+    line-height: 2.4rem;
+
+}
+
+.sale-offer__discounts {}
+
+.sale-offer__price {
+    font-family: "Poppins SemiBold";
+    color: var(--color-text-lightgrey);
+    text-decoration: line-through;
+}
+
+.sale-offer__discount {
+    font-family: "Poppins SemiBold";
+    color: var(--color-primary);
+    font-size: 2.4rem;
+
+}
+
+.sale-offer__actions {
+    width: 15rem;
+    height: 4rem;
+    background-color: var(--color-text-lightblack1);
+    color: var(--color-background-lightgrey2);
+    display: flex;
+    align-items: center;
+    margin-top: 5.5rem;
+}
+
+.sale-offer__action {}
 
 /* 
 ================

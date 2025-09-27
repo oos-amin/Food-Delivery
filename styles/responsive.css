@@ -180,7 +180,7 @@
     }
 }
 
-@media (max-width:420px) {
+@media (max-width:427px) {
     .home-content__actions.mobile {
         flex-wrap: wrap;
         gap: 2.5rem;
@@ -205,6 +205,19 @@
 
     .menu-foods__wrapper {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .sale__wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .sale-offer__img {
+        position: absolute;
+        top: 12rem;
+        bottom: 0;
+        right: -11.5rem;
+        margin: auto 0;
+        cursor: pointer;
     }
 }
 
