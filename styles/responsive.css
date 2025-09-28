@@ -44,6 +44,10 @@
     .app-content__action-text1 {
         font-size: 1.2rem;
     }
+
+    .location__title {
+        font-size: 4rem;
+    }
 }
 
 @media(max-width:992px) {
@@ -163,6 +167,14 @@
     .app-content {
         order: 1;
     }
+
+    .location__wrapper {
+        padding: 11rem 0rem;
+    }
+
+    .location-form {
+        width: 70%;
+    }
 }
 
 @media(max-width:768px) {
@@ -211,6 +223,14 @@
 
     .app-content__caption {
         font-size: 1.5rem;
+    }
+
+    .location-form {
+        width: 90%;
+    }
+
+    .location__title {
+        font-size: 3rem;
     }
 }
 
@@ -279,6 +299,18 @@
         justify-content: center;
     }
 
+    .location__wrapper {
+        padding: 11rem 3rem;
+    }
+
+    .location-form {
+        width: 95%;
+    }
+
+    .location-form__action {
+        font-size: 1.5rem;
+    }
+
 }
 
 
@@ -343,7 +375,28 @@
         font-size: 1.4rem;
     }
 
+    .location__title {
+        font-size: 2rem;
+    }
 
+    .location__caption {
+        font-size: 1.4rem;
+        margin: 2rem 0;
+
+    }
+
+    .location-form__input::placeholder {
+        font-size: 1.1rem;
+    }
+
+    .location-form {
+        padding: 0.2rem 0.5rem 0.2rem 1.5rem;
+    }
+
+    .location-form__action {
+        width: 17rem;
+        font-size: 1.2rem;
+    }
 
 }
 
