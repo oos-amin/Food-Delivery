@@ -2,11 +2,47 @@
     .menu-foods__wrapper {
         column-gap: 2rem;
     }
+
+    .app {
+        grid-template-columns: 30% 55.5%;
+    }
+
+    .app-photo {
+        width: 35rem;
+        bottom: 14.5px;
+    }
+
+    .app-content__title {
+        font-size: 4.1rem;
+    }
 }
 
 @media(max-width:1200px) {
     .home-content__title {
         width: 90%;
+    }
+
+    .app {
+        grid-template-columns: 28% 58.5%;
+    }
+
+    .app-photo {
+        width: 27rem;
+        bottom: 6.5px;
+    }
+
+
+    .app-content__title {
+        font-size: 2.5rem;
+    }
+
+    .app-content__action {
+        width: 17rem;
+        height: 5rem;
+    }
+
+    .app-content__action-text1 {
+        font-size: 1.2rem;
     }
 }
 
@@ -104,6 +140,29 @@
     .menu-list {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .app {
+        max-width: 85%;
+        grid-template-columns: 100%;
+        padding: 6rem 12rem 6rem 4.5rem;
+        overflow: hidden;
+        gap: 0;
+
+    }
+
+    .app-photo {
+        bottom: -58.5px;
+        left: -29px;
+        order: 2;
+    }
+
+    .app-photo__img {
+        transform: scale(1.1);
+    }
+
+    .app-content {
+        order: 1;
+    }
 }
 
 @media(max-width:768px) {
@@ -138,6 +197,21 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .app {
+        max-width: 97%;
+    }
+
+    .app-content__heading {
+        font-size: 1.8rem;
+    }
+
+    .app-content__title {
+        font-size: 2.6rem;
+    }
+
+    .app-content__caption {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -178,7 +252,35 @@
     .menu-list {
         grid-template-columns: 1fr 1fr;
     }
+
+    .app {
+        max-width: 100%;
+        background-color: var(--color-background-lightgrey1);
+        display: grid;
+        gap: 0.5rem;
+        border-top-right-radius: 50rem;
+        border-top-left-radius: 50rem;
+        border-bottom-right-radius: 0;
+        padding: 7rem;
+        overflow: visible;
+    }
+
+    .app-content {
+        text-align: center;
+    }
+
+    .app-photo {
+        bottom: -68.5px;
+        left: 0px;
+        margin: 0 auto;
+    }
+
+    .app-content__actions {
+        justify-content: center;
+    }
+
 }
+
 
 @media (max-width:427px) {
     .home-content__actions.mobile {
@@ -199,8 +301,8 @@
         justify-content: center;
     }
 
-    .home-photo {
-        max-width: 23rem;
+    .app-photo {
+        width: 100%;
     }
 
     .menu-foods__wrapper {
@@ -219,6 +321,30 @@
         margin: auto 0;
         cursor: pointer;
     }
+
+    .app {
+        padding: 5.2rem;
+    }
+
+    .app-photo {
+        bottom: -50.5px;
+        left: 4px;
+    }
+
+    .app-content__heading {
+        font-size: 1.6rem;
+    }
+
+    .app-content__title {
+        font-size: 2.1rem;
+    }
+
+    .app-content__caption {
+        font-size: 1.4rem;
+    }
+
+
+
 }
 
 @media (min-width:768px) {
